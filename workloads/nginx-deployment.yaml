@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-deployment
-  namespace: web
+  namespace: lion-web
 spec:
   selector:
     matchLabels:
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: bharamicrosystems/nginx:v1
+        image: 85117921/hello-app:v1
         ports:
-        - containerPort: 80
+        - containerPort: 8080
