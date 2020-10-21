@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: 85117921/hello-app:v1
+        image: 85117921/hello-app:v2
         ports:
         - containerPort: 8080
